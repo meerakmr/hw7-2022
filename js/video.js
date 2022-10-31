@@ -60,11 +60,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) { // we need to unmute
 		console.log("Unmute");
 		video.muted = false;
-		document.querySelector("#mute").value = "Mute";
+		document.querySelector("#mute").innerHTML = "Mute";
 	} else { // we need to mute
 		console.log("Mute");
 		video.muted = true;
-		document.querySelector("#mute").value = "Unmute";
+		document.querySelector("#mute").innerHTML = "Unmute";
 	}
 })
 
