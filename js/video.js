@@ -70,7 +70,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 // volume slider: 
 // change volume, update volume information
-document.querySelector("#slider").addEventListener("input", function () {
+document.querySelector("#slider").addEventListener("change", function () {
 	video.volume = document.querySelector("#slider").value/100;
 	console.log("The current value is " + video.volume);
 	document.querySelector("#volume").innerHTML = video.volume*100 + "%";
